@@ -1,0 +1,22 @@
+{
+  "storyId": "button-with-variants-and-hover-states",
+  "title": "Button With Variants And Hover States",
+  "versions": [
+    {
+      "id": "11e39de672dbe702",
+      "timestamp": 1764673612988,
+      "prompt": "Create a simple Button component with primary, secondary, and danger variants. Include hover states.",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Stack } from '@mantine/core';\n\nconst meta = {\n  title: 'Generated/Button with Variants and Hover States',\n  component: Button,\n  parameters: {\n    layout: 'centered',\n  },\n} satisfies Meta<typeof Button>;\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Primary: Story = {\n  args: {\n    children: 'Primary Button',\n    variant: 'filled',\n    color: 'blue',\n  },\n};\n\nexport const Secondary: Story = {\n  args: {\n    children: 'Secondary Button',\n    variant: 'outline',\n    color: 'blue',\n  },\n};\n\nexport const Danger: Story = {\n  args: {\n    children: 'Danger Button',\n    variant: 'filled',\n    color: 'red',\n  },\n};\n\nexport const AllVariants: Story = {\n  render: () => (\n    <Stack gap=\"md\" align=\"center\">\n      <Button variant=\"filled\" color=\"blue\">\n        Primary Button\n      </Button>\n      <Button variant=\"outline\" color=\"blue\">\n        Secondary Button\n      </Button>\n      <Button variant=\"filled\" color=\"red\">\n        Danger Button\n      </Button>\n    </Stack>\n  ),\n};\n\nexport const PrimaryHoverDemo: Story = {\n  args: {\n    children: 'Hover Over Me (Primary)',\n    variant: 'filled',\n    color: 'blue',\n  },\n};\n\nexport const SecondaryHoverDemo: Story = {\n  args: {\n    children: 'Hover Over Me (Secondary)',\n    variant: 'outline',\n    color: 'blue',\n  },\n};\n\nexport const DangerHoverDemo: Story = {\n  args: {\n    children: 'Hover Over Me (Danger)',\n    variant: 'filled',\n    color: 'red',\n  },\n};",
+      "fileName": "button-with-variants-and-hover-states-ce18ddc6.stories.tsx"
+    },
+    {
+      "id": "20f229c97465603c",
+      "timestamp": 1764776748802,
+      "prompt": "Head switches to these two.",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Stack } from '@mantine/core';\n\nconst meta = {\n  title: 'Generated/Button with Variants and Hover States',\n  component: Button,\n  parameters: {\n    layout: 'centered',\n  },\n} satisfies Meta<typeof Button>;\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const PrimaryHoverDemo: Story = {\n  args: {\n    children: 'Hover Over Me (Primary)',\n    variant: 'filled',\n    color: 'blue',\n  },\n};\n\nexport const SecondaryHoverDemo: Story = {\n  args: {\n    children: 'Hover Over Me (Secondary)',\n    variant: 'outline',\n    color: 'blue',\n  },\n};\n\nexport const Primary: Story = {\n  args: {\n    children: 'Primary Button',\n    variant: 'filled',\n    color: 'blue',\n  },\n};\n\nexport const Secondary: Story = {\n  args: {\n    children: 'Secondary Button',\n    variant: 'outline',\n    color: 'blue',\n  },\n};\n\nexport const Danger: Story = {\n  args: {\n    children: 'Danger Button',\n    variant: 'filled',\n    color: 'red',\n  },\n};\n\nexport const AllVariants: Story = {\n  render: () => (\n    <Stack gap=\"md\" align=\"center\">\n      <Button variant=\"filled\" color=\"blue\">\n        Primary Button\n      </Button>\n      <Button variant=\"outline\" color=\"blue\">\n        Secondary Button\n      </Button>\n      <Button variant=\"filled\" color=\"red\">\n        Danger Button\n      </Button>\n    </Stack>\n  ),\n};\n\nexport const DangerHoverDemo: Story = {\n  args: {\n    children: 'Hover Over Me (Danger)',\n    variant: 'filled',\n    color: 'red',\n  },\n};",
+      "fileName": "button-with-variants-and-hover-states-ce18ddc6.stories.tsx",
+      "parentId": "11e39de672dbe702"
+    }
+  ],
+  "currentVersionId": "20f229c97465603c"
+}

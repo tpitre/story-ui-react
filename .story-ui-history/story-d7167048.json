@@ -1,0 +1,14 @@
+{
+  "storyId": "story-d7167048",
+  "title": "Story D7167048",
+  "versions": [
+    {
+      "id": "2ce163d9fa0eb09d",
+      "timestamp": 1764728411160,
+      "prompt": "Add an image at the top of the card",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Card, Image, Text, Button, Stack } from '@mantine/core';\n\nconst meta = {\n  title: 'Generated/Card with Title Description and Button',\n  component: Card,\n  parameters: {\n    layout: 'centered',\n  },\n} satisfies Meta<typeof Card>;\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 340 }}>\n      <Card.Section>\n        <Image\n          src=\"https://picsum.photos/340/160\"\n          alt=\"Card header image\"\n          height={160}\n        />\n      </Card.Section>\n\n      <Stack gap=\"md\" mt=\"md\">\n        <Text fw={500} size=\"lg\">\n          Card Title\n        </Text>\n\n        <Text size=\"sm\" c=\"dimmed\">\n          This is a description for the card. It provides additional context and information about the content displayed in this card component.\n        </Text>\n\n        <Button variant=\"filled\" fullWidth mt=\"md\">\n          Action Button\n        </Button>\n      </Stack>\n    </Card>\n  ),\n};",
+      "fileName": "story-d7167048"
+    }
+  ],
+  "currentVersionId": "2ce163d9fa0eb09d"
+}

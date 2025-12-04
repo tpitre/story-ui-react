@@ -1,0 +1,42 @@
+import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Card, Image, Text, Button, Stack } from '@mantine/core';
+
+const meta = {
+  title: 'Generated/Card with Title Description and Button',
+  component: Card,
+  parameters: {
+    layout: 'centered',
+  },
+} satisfies Meta<typeof Card>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+  render: () => (
+    <Card shadow="sm" padding="lg" radius="md" withBorder style={{ width: 340 }}>
+      <Card.Section>
+        <Image
+          src="https://picsum.photos/340/160"
+          alt="Card header image"
+          height={160}
+        />
+      </Card.Section>
+
+      <Stack gap="md" mt="md">
+        <Text fw={500} size="lg">
+          Card Title
+        </Text>
+
+        <Text size="sm" c="dimmed">
+          This is a description for the card. It provides additional context and information about the content displayed in this card component.
+        </Text>
+
+        <Button variant="filled" fullWidth mt="md">
+          Action Button
+        </Button>
+      </Stack>
+    </Card>
+  ),
+};

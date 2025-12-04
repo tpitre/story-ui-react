@@ -1,0 +1,14 @@
+{
+  "storyId": "two-buttons",
+  "title": "Two Buttons",
+  "versions": [
+    {
+      "id": "0e5542a79ed16b7d",
+      "timestamp": 1764777501766,
+      "prompt": "Generate two buttons.",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Group } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Two Buttons',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Group>\n      <Button>First Button</Button>\n      <Button>Second Button</Button>\n    </Group>\n  ),\n};\n\nexport const WithVariants: Story = {\n  render: () => (\n    <Group>\n      <Button variant=\"filled\">Primary Button</Button>\n      <Button variant=\"outline\">Secondary Button</Button>\n    </Group>\n  ),\n};\n\nexport const DifferentSizes: Story = {\n  render: () => (\n    <Group>\n      <Button size=\"sm\">Small Button</Button>\n      <Button size=\"lg\">Large Button</Button>\n    </Group>\n  ),\n};",
+      "fileName": "two-buttons-3664cd5a.stories.tsx"
+    }
+  ],
+  "currentVersionId": "0e5542a79ed16b7d"
+}

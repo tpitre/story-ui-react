@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Button with Variants and Hover States",
+    "fileName": "button-with-variants-and-hover-states-ce18ddc6.stories.tsx",
+    "storyId": "button-with-variants-and-hover-states-ce18ddc6.stories.tsx",
+    "hash": "6ed34164",
+    "createdAt": "2025-12-02T11:06:52.988Z",
+    "updatedAt": "2025-12-03T15:45:48.802Z",
+    "prompt": "Head switches to these two."
+  },
+  {
+    "title": "Simple Mantine Button",
+    "fileName": "simple-mantine-button-943be68d.stories.tsx",
+    "storyId": "story-943be68d",
+    "hash": "943be68d",
+    "createdAt": "2025-12-02T13:01:40.011Z",
+    "updatedAt": "2025-12-02T13:01:40.011Z",
+    "prompt": "Create a simple Mantine Button"
+  },
+  {
+    "title": "Card with Title Description and Button",
+    "fileName": "story-d7167048",
+    "storyId": "story-d7167048",
+    "hash": "d7167048",
+    "createdAt": "2025-12-03T02:19:13.893Z",
+    "updatedAt": "2025-12-03T02:20:11.160Z",
+    "prompt": "Add an image at the top of the card"
+  },
+  {
+    "title": "Simple Card with Title and Button",
+    "fileName": "simple-card-with-title-and-button-9594e6a0.stories.tsx",
+    "storyId": "story-9594e6a0",
+    "hash": "9594e6a0",
+    "createdAt": "2025-12-03T03:05:55.735Z",
+    "updatedAt": "2025-12-03T03:05:55.735Z",
+    "prompt": "Create a simple card component with a title, description, and a button"
+  },
+  {
+    "title": "Switches - Multiple",
+    "fileName": "switches-multiple-adbca207.stories.tsx",
+    "storyId": "story-adbca207",
+    "hash": "adbca207",
+    "createdAt": "2025-12-03T14:04:20.120Z",
+    "updatedAt": "2025-12-03T14:04:20.120Z",
+    "prompt": "Generate a couple of switches."
+  },
+  {
+    "title": "Simple Card",
+    "fileName": "simple-card-0d3c2479.stories.tsx",
+    "storyId": "story-0d3c2479",
+    "hash": "0d3c2479",
+    "createdAt": "2025-12-03T15:44:31.019Z",
+    "updatedAt": "2025-12-03T15:44:31.019Z",
+    "prompt": "Generate a simple card."
+  },
+  {
+    "title": "Two Buttons",
+    "fileName": "two-buttons-3664cd5a.stories.tsx",
+    "storyId": "story-3664cd5a",
+    "hash": "3664cd5a",
+    "createdAt": "2025-12-03T15:58:21.766Z",
+    "updatedAt": "2025-12-03T15:58:21.766Z",
+    "prompt": "Generate two buttons."
+  },
+  {
+    "title": "Three-Card Column",
+    "fileName": "three-card-column-8f63e268.stories.tsx",
+    "storyId": "story-8f63e268",
+    "hash": "8f63e268",
+    "createdAt": "2025-12-03T17:51:33.882Z",
+    "updatedAt": "2025-12-03T17:51:33.882Z",
+    "prompt": "Generate a three-card column."
+  },
+  {
+    "title": "Button",
+    "fileName": "button-9cf20eae.stories.tsx",
+    "storyId": "story-9cf20eae",
+    "hash": "9cf20eae",
+    "createdAt": "2025-12-03T19:15:57.392Z",
+    "updatedAt": "2025-12-03T19:15:57.392Z",
+    "prompt": "make a button"
+  },
+  {
+    "title": "Two Checkboxes",
+    "fileName": "two-checkboxes-730c5ffb.stories.tsx",
+    "storyId": "story-730c5ffb",
+    "hash": "730c5ffb",
+    "createdAt": "2025-12-03T20:53:18.622Z",
+    "updatedAt": "2025-12-03T20:53:18.622Z",
+    "prompt": "Create two checkboxes."
+  },
+  {
+    "title": "Card with Button Container and Grid",
+    "fileName": "card-with-button-container-and-grid-7e2a54f2.stories.tsx",
+    "storyId": "story-7e2a54f2",
+    "hash": "7e2a54f2",
+    "createdAt": "2025-12-04T01:58:54.141Z",
+    "updatedAt": "2025-12-04T01:58:54.141Z",
+    "prompt": "Create a card component that uses MagicButton, SuperContainer, and AwesomeGrid - these are definitely real Mantine components"
+  }
+]

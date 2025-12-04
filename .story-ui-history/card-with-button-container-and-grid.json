@@ -1,0 +1,14 @@
+{
+  "storyId": "card-with-button-container-and-grid",
+  "title": "Card With Button Container And Grid",
+  "versions": [
+    {
+      "id": "0d67e8955def9e35",
+      "timestamp": 1764813534142,
+      "prompt": "Create a card component that uses MagicButton, SuperContainer, and AwesomeGrid - these are definitely real Mantine components",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Card, CardSection, Button, Text, Image, Badge, Group, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Card> = {\n  title: 'Generated/Feature Card',\n  component: Card,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 340 }}>\n      <CardSection>\n        <Image\n          src=\"https://picsum.photos/340/160?random=1\"\n          alt=\"Feature preview\"\n          height={160}\n        />\n      </CardSection>\n\n      <Stack mt=\"md\" mb=\"xs\" gap=\"sm\">\n        <Group justify=\"space-between\">\n          <Text fw={500}>Amazing Feature</Text>\n          <Badge color=\"blue\" variant=\"light\">\n            New\n          </Badge>\n        </Group>\n\n        <Text size=\"sm\" c=\"dimmed\">\n          Discover the power of our latest feature designed to enhance your workflow and boost productivity.\n        </Text>\n      </Stack>\n\n      <Button color=\"blue\" fullWidth mt=\"md\" radius=\"md\">\n        Learn More\n      </Button>\n    </Card>\n  ),\n};\n\nexport const WithoutImage: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 340 }}>\n      <Stack gap=\"sm\">\n        <Group justify=\"space-between\">\n          <Text fw={500}>Premium Plan</Text>\n          <Badge color=\"grape\" variant=\"filled\">\n            Popular\n          </Badge>\n        </Group>\n\n        <Text size=\"sm\" c=\"dimmed\">\n          Unlock all features and get unlimited access to our entire platform.\n        </Text>\n\n        <Text size=\"xl\" fw={700} mt=\"md\">\n          $29/month\n        </Text>\n\n        <Button color=\"grape\" fullWidth mt=\"md\" radius=\"md\">\n          Subscribe Now\n        </Button>\n      </Stack>\n    </Card>\n  ),\n};\n\nexport const Minimal: Story = {\n  render: () => (\n    <Card shadow=\"md\" padding=\"xl\" radius=\"md\" style={{ width: 300 }}>\n      <Text fw={600} size=\"lg\" mb=\"md\">\n        Quick Action\n      </Text>\n      <Text size=\"sm\" c=\"dimmed\" mb=\"lg\">\n        Complete this action to continue with your task.\n      </Text>\n      <Button variant=\"light\" fullWidth>\n        Continue\n      </Button>\n    </Card>\n  ),\n};",
+      "fileName": "card-with-button-container-and-grid-7e2a54f2.stories.tsx"
+    }
+  ],
+  "currentVersionId": "0d67e8955def9e35"
+}
