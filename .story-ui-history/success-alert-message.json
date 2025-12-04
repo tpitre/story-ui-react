@@ -1,0 +1,14 @@
+{
+  "storyId": "success-alert-message",
+  "title": "Success Alert Message",
+  "versions": [
+    {
+      "id": "adfa9a183a98ae2e",
+      "timestamp": 1764847456251,
+      "prompt": "Create a simple alert with a success message",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Alert } from '@mantine/core';\n\nconst meta: Meta<typeof Alert> = {\n  title: 'Generated/Success Alert',\n  component: Alert,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Success: Story = {\n  args: {\n    title: 'Success!',\n    color: 'green',\n    children: 'Your changes have been saved successfully.',\n  },\n};\n\nexport const WithoutTitle: Story = {\n  args: {\n    color: 'green',\n    children: 'Operation completed successfully!',\n  },\n};\n\nexport const Detailed: Story = {\n  args: {\n    title: 'Profile Updated',\n    color: 'green',\n    children: 'Your profile information has been updated and saved to the database. All changes are now live.',\n  },\n};",
+      "fileName": "success-alert-message-ad27a49d.stories.tsx"
+    }
+  ],
+  "currentVersionId": "adfa9a183a98ae2e"
+}

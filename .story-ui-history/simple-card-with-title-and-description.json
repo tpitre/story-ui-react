@@ -1,0 +1,14 @@
+{
+  "storyId": "simple-card-with-title-and-description",
+  "title": "Simple Card With Title And Description",
+  "versions": [
+    {
+      "id": "c693aa3e48a75f65",
+      "timestamp": 1764847178533,
+      "prompt": "Create a simple card with a title and description",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Card, Title, Text } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Simple Card',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 400 }}>\n      <Title order={3}>Welcome to Our Platform</Title>\n      <Text mt=\"md\" c=\"dimmed\">\n        Discover amazing features and tools designed to help you achieve your goals. \n        Get started today and experience the difference.\n      </Text>\n    </Card>\n  ),\n};\n\nexport const WithImage: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 400 }}>\n      <Card.Section>\n        <img \n          src=\"https://picsum.photos/400/200?random=1\" \n          alt=\"Card header image\"\n          style={{ width: '100%', display: 'block' }}\n        />\n      </Card.Section>\n      <Title order={3} mt=\"md\">Beautiful Landscape</Title>\n      <Text mt=\"sm\" c=\"dimmed\">\n        Explore breathtaking views and stunning scenery from around the world. \n        Each location tells its own unique story.\n      </Text>\n    </Card>\n  ),\n};\n\nexport const Compact: Story = {\n  render: () => (\n    <Card shadow=\"xs\" padding=\"md\" radius=\"sm\" withBorder style={{ width: 300 }}>\n      <Title order={4}>Quick Update</Title>\n      <Text mt=\"xs\" size=\"sm\" c=\"dimmed\">\n        Check out the latest features and improvements we've added.\n      </Text>\n    </Card>\n  ),\n};",
+      "fileName": "simple-card-with-title-and-description-d94baff6.stories.tsx"
+    }
+  ],
+  "currentVersionId": "c693aa3e48a75f65"
+}

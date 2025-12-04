@@ -97,5 +97,41 @@
     "createdAt": "2025-12-04T01:58:54.141Z",
     "updatedAt": "2025-12-04T01:58:54.141Z",
     "prompt": "Create a card component that uses MagicButton, SuperContainer, and AwesomeGrid - these are definitely real Mantine components"
+  },
+  {
+    "title": "Button with Click Counter",
+    "fileName": "button-with-click-counter-6cb07be1.stories.tsx",
+    "storyId": "story-6cb07be1",
+    "hash": "6cb07be1",
+    "createdAt": "2025-12-04T11:14:24.595Z",
+    "updatedAt": "2025-12-04T11:14:24.595Z",
+    "prompt": "Create a simple button with a click counter"
+  },
+  {
+    "title": "Simple Card with Title and Description",
+    "fileName": "simple-card-with-title-and-description-d94baff6.stories.tsx",
+    "storyId": "story-d94baff6",
+    "hash": "d94baff6",
+    "createdAt": "2025-12-04T11:19:38.533Z",
+    "updatedAt": "2025-12-04T11:19:38.533Z",
+    "prompt": "Create a simple card with a title and description"
+  },
+  {
+    "title": "Notification Badge",
+    "fileName": "notification-badge-a405ca99.stories.tsx",
+    "storyId": "story-a405ca99",
+    "hash": "a405ca99",
+    "createdAt": "2025-12-04T11:21:31.182Z",
+    "updatedAt": "2025-12-04T11:21:31.182Z",
+    "prompt": "Create a notification badge component"
+  },
+  {
+    "title": "Success Alert Message",
+    "fileName": "success-alert-message-ad27a49d.stories.tsx",
+    "storyId": "story-ad27a49d",
+    "hash": "ad27a49d",
+    "createdAt": "2025-12-04T11:24:16.251Z",
+    "updatedAt": "2025-12-04T11:24:16.251Z",
+    "prompt": "Create a simple alert with a success message"
   }
 ]
