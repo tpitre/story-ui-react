@@ -1,0 +1,14 @@
+{
+  "storyId": "button-group-primary-and-secondary-actions",
+  "title": "Button Group Primary And Secondary Actions",
+  "versions": [
+    {
+      "id": "63f0068b863d3265",
+      "timestamp": 1764937367960,
+      "prompt": "Create a button group with primary and secondary actions",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { ButtonGroup, Button } from '@mantine/core';\n\nconst meta: Meta<typeof ButtonGroup> = {\n  title: 'Generated/Button Group',\n  component: ButtonGroup,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const PrimaryAndSecondary: Story = {\n  render: () => (\n    <ButtonGroup>\n      <Button variant=\"filled\">Primary Action</Button>\n      <Button variant=\"default\">Secondary Action</Button>\n    </ButtonGroup>\n  ),\n};\n\nexport const MultipleActions: Story = {\n  render: () => (\n    <ButtonGroup>\n      <Button variant=\"filled\">Save</Button>\n      <Button variant=\"default\">Cancel</Button>\n      <Button variant=\"default\">Reset</Button>\n    </ButtonGroup>\n  ),\n};\n\nexport const WithOutline: Story = {\n  render: () => (\n    <ButtonGroup>\n      <Button variant=\"filled\">Submit</Button>\n      <Button variant=\"outline\">Preview</Button>\n      <Button variant=\"outline\">Draft</Button>\n    </ButtonGroup>\n  ),\n};\n\nexport const ColorVariants: Story = {\n  render: () => (\n    <ButtonGroup>\n      <Button variant=\"filled\" color=\"blue\">Confirm</Button>\n      <Button variant=\"default\">Maybe</Button>\n      <Button variant=\"outline\" color=\"red\">Delete</Button>\n    </ButtonGroup>\n  ),\n};\n\nexport const Vertical: Story = {\n  render: () => (\n    <ButtonGroup orientation=\"vertical\">\n      <Button variant=\"filled\">Primary Action</Button>\n      <Button variant=\"default\">Secondary Action</Button>\n      <Button variant=\"default\">Tertiary Action</Button>\n    </ButtonGroup>\n  ),\n};",
+      "fileName": "button-group-primary-and-secondary-actions-263e2c9e.stories.tsx"
+    }
+  ],
+  "currentVersionId": "63f0068b863d3265"
+}

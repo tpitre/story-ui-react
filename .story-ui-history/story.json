@@ -1,0 +1,14 @@
+{
+  "storyId": "story",
+  "title": "Story",
+  "versions": [
+    {
+      "id": "a9299aec2c5b1867",
+      "timestamp": 1765056229468,
+      "prompt": "Create a simple button",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Responsive Card with Image and Text (dc9d9f44)',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Click Me',\n  },\n};\n\nexport const Primary: Story = {\n  args: {\n    children: 'Primary Button',\n    variant: 'filled',\n    color: 'blue',\n  },\n};\n\nexport const Outline: Story = {\n  args: {\n    children: 'Outline Button',\n    variant: 'outline',\n  },\n};\n\nexport const Subtle: Story = {\n  args: {\n    children: 'Subtle Button',\n    variant: 'subtle',\n  },\n};\n\nexport const Large: Story = {\n  args: {\n    children: 'Large Button',\n    size: 'lg',\n  },\n};\n\nexport const Small: Story = {\n  args: {\n    children: 'Small Button',\n    size: 'sm',\n  },\n};",
+      "fileName": "story-dc9d9f44.stories.tsx"
+    }
+  ],
+  "currentVersionId": "a9299aec2c5b1867"
+}

@@ -133,5 +133,41 @@
     "createdAt": "2025-12-04T11:24:16.251Z",
     "updatedAt": "2025-12-04T11:24:16.251Z",
     "prompt": "Create a simple alert with a success message"
+  },
+  {
+    "title": "Form with Input Fields and Validation",
+    "fileName": "form-with-input-fields-and-validation-69cd3d6f.stories.tsx",
+    "storyId": "story-69cd3d6f",
+    "hash": "69cd3d6f",
+    "createdAt": "2025-12-05T04:11:54.041Z",
+    "updatedAt": "2025-12-05T04:11:54.041Z",
+    "prompt": "Create a form with input fields and validation"
+  },
+  {
+    "title": "Responsive Card with Image and Text",
+    "fileName": "story-dc9d9f44.stories.tsx",
+    "storyId": "story-dc9d9f44",
+    "hash": "dc9d9f44",
+    "createdAt": "2025-12-05T04:12:48.384Z",
+    "updatedAt": "2025-12-06T21:23:49.466Z",
+    "prompt": "Create a simple button"
+  },
+  {
+    "title": "Card with Image and Text",
+    "fileName": "card-with-image-and-text-e5dddb9f.stories.tsx",
+    "storyId": "story-e5dddb9f",
+    "hash": "e5dddb9f",
+    "createdAt": "2025-12-05T04:27:54.156Z",
+    "updatedAt": "2025-12-05T04:27:54.156Z",
+    "prompt": "Create a responsive card with image, title, and description"
+  },
+  {
+    "title": "Button Group - Primary and Secondary Actions",
+    "fileName": "button-group-primary-and-secondary-actions-263e2c9e.stories.tsx",
+    "storyId": "story-263e2c9e",
+    "hash": "263e2c9e",
+    "createdAt": "2025-12-05T12:22:47.958Z",
+    "updatedAt": "2025-12-05T12:22:47.958Z",
+    "prompt": "Create a button group with primary and secondary actions"
   }
 ]
