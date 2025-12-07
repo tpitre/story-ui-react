@@ -16,7 +16,7 @@
     "@emotion/react": "^11.14.0",
     "@mantine/core": "^8.3.9",
     "@mantine/hooks": "^8.3.9",
-    "@tpitre/story-ui": "^3.10.1",
+    "@tpitre/story-ui": "^3.10.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
