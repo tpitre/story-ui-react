@@ -1,0 +1,14 @@
+{
+  "storyId": "badge-display",
+  "title": "Badge Display",
+  "versions": [
+    {
+      "id": "e8d3d513a4fe8d9c",
+      "timestamp": 1765665030482,
+      "prompt": "Show me a badge",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Badge, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Badge> = {\n  title: 'Generated/Badge Display',\n  component: Badge,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: 'select',\n      options: ['filled', 'light', 'outline', 'dot', 'gradient'],\n    },\n    size: {\n      control: 'select',\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n    color: {\n      control: 'select',\n      options: ['blue', 'red', 'green', 'yellow', 'gray', 'pink', 'violet'],\n    },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Badge',\n  },\n};\n\nexport const Filled: Story = {\n  args: {\n    variant: 'filled',\n    children: 'Filled Badge',\n  },\n};\n\nexport const Light: Story = {\n  args: {\n    variant: 'light',\n    children: 'Light Badge',\n  },\n};\n\nexport const Outline: Story = {\n  args: {\n    variant: 'outline',\n    children: 'Outline Badge',\n  },\n};\n\nexport const Dot: Story = {\n  args: {\n    variant: 'dot',\n    children: 'Dot Badge',\n  },\n};\n\nexport const Colors: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Badge color=\"blue\">Blue</Badge>\n      <Badge color=\"red\">Red</Badge>\n      <Badge color=\"green\">Green</Badge>\n      <Badge color=\"yellow\">Yellow</Badge>\n      <Badge color=\"violet\">Violet</Badge>\n    </Stack>\n  ),\n};\n\nexport const Sizes: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Badge size=\"xs\">Extra Small</Badge>\n      <Badge size=\"sm\">Small</Badge>\n      <Badge size=\"md\">Medium</Badge>\n      <Badge size=\"lg\">Large</Badge>\n      <Badge size=\"xl\">Extra Large</Badge>\n    </Stack>\n  ),\n};",
+      "fileName": "badge-display-4e9679b7.stories.tsx"
+    }
+  ],
+  "currentVersionId": "e8d3d513a4fe8d9c"
+}

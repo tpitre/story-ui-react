@@ -1,0 +1,14 @@
+{
+  "storyId": "radio-button",
+  "title": "Radio Button",
+  "versions": [
+    {
+      "id": "280fc5456380a611",
+      "timestamp": 1765665660053,
+      "prompt": "Show me a radio button",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Radio, RadioGroup, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Radio> = {\n  title: 'Generated/Radio Button',\n  component: Radio,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    label: 'Default radio',\n    value: 'default',\n  },\n};\n\nexport const Checked: Story = {\n  args: {\n    label: 'Checked radio',\n    value: 'checked',\n    defaultChecked: true,\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    label: 'Disabled radio',\n    value: 'disabled',\n    disabled: true,\n  },\n};\n\nexport const WithDescription: Story = {\n  args: {\n    label: 'Radio with description',\n    description: 'This is a helpful description for the radio button',\n    value: 'description',\n  },\n};\n\nexport const RadioGroupExample: Story = {\n  render: () => (\n    <RadioGroup\n      label=\"Select your favorite framework\"\n      description=\"Choose the one you like most\"\n      defaultValue=\"react\"\n    >\n      <Stack mt=\"xs\">\n        <Radio value=\"react\" label=\"React\" />\n        <Radio value=\"vue\" label=\"Vue\" />\n        <Radio value=\"angular\" label=\"Angular\" />\n        <Radio value=\"svelte\" label=\"Svelte\" />\n      </Stack>\n    </RadioGroup>\n  ),\n};\n\nexport const RadioGroupHorizontal: Story = {\n  render: () => (\n    <RadioGroup\n      label=\"Size\"\n      defaultValue=\"medium\"\n    >\n      <Stack mt=\"xs\">\n        <Radio value=\"small\" label=\"Small\" />\n        <Radio value=\"medium\" label=\"Medium\" />\n        <Radio value=\"large\" label=\"Large\" />\n      </Stack>\n    </RadioGroup>\n  ),\n};",
+      "fileName": "radio-button-7f39d4d4.stories.tsx"
+    }
+  ],
+  "currentVersionId": "280fc5456380a611"
+}

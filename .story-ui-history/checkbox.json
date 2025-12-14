@@ -1,0 +1,14 @@
+{
+  "storyId": "checkbox",
+  "title": "Checkbox",
+  "versions": [
+    {
+      "id": "66e8101187188085",
+      "timestamp": 1765665415498,
+      "prompt": "Show me a checkbox",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Checkbox> = {\n  title: 'Generated/Checkbox',\n  component: Checkbox,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    label: { control: 'text' },\n    disabled: { control: 'boolean' },\n    error: { control: 'text' },\n    description: { control: 'text' },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    label: 'I agree to terms and conditions',\n  },\n};\n\nexport const Checked: Story = {\n  args: {\n    label: 'Subscribe to newsletter',\n    defaultChecked: true,\n  },\n};\n\nexport const WithDescription: Story = {\n  args: {\n    label: 'Enable notifications',\n    description: 'You will receive email notifications for important updates',\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    label: 'This option is disabled',\n    disabled: true,\n  },\n};\n\nexport const WithError: Story = {\n  args: {\n    label: 'Accept privacy policy',\n    error: 'You must accept the privacy policy to continue',\n  },\n};\n\nexport const MultipleCheckboxes: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Checkbox label=\"Receive email notifications\" />\n      <Checkbox label=\"Receive SMS notifications\" />\n      <Checkbox label=\"Receive push notifications\" defaultChecked />\n      <Checkbox label=\"Weekly newsletter\" />\n    </Stack>\n  ),\n};",
+      "fileName": "checkbox-107dbf85.stories.tsx"
+    }
+  ],
+  "currentVersionId": "66e8101187188085"
+}

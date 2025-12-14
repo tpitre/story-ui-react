@@ -8,7 +8,98 @@
       "prompt": "Create a simple button",
       "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Responsive Card with Image and Text (dc9d9f44)',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Click Me',\n  },\n};\n\nexport const Primary: Story = {\n  args: {\n    children: 'Primary Button',\n    variant: 'filled',\n    color: 'blue',\n  },\n};\n\nexport const Outline: Story = {\n  args: {\n    children: 'Outline Button',\n    variant: 'outline',\n  },\n};\n\nexport const Subtle: Story = {\n  args: {\n    children: 'Subtle Button',\n    variant: 'subtle',\n  },\n};\n\nexport const Large: Story = {\n  args: {\n    children: 'Large Button',\n    size: 'lg',\n  },\n};\n\nexport const Small: Story = {\n  args: {\n    children: 'Small Button',\n    size: 'sm',\n  },\n};",
       "fileName": "story-dc9d9f44.stories.tsx"
+    },
+    {
+      "id": "6ca073b9bbf6f06e",
+      "timestamp": 1765662620514,
+      "prompt": "Now add a couple of checkboxes",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Button>Click Me</Button>\n      <Switch label=\"Enable notifications\" />\n      <Checkbox label=\"I agree to terms and conditions\" />\n      <Checkbox label=\"Subscribe to newsletter\" />\n    </Stack>\n  ),\n};",
+      "fileName": "story-af8e3f76.stories.tsx"
+    },
+    {
+      "id": "c0c9a9a18f3a7df1",
+      "timestamp": 1765662982798,
+      "prompt": "Now add a couple of checkboxes",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack>\n      <Button>Click Me</Button>\n      <Switch label=\"Enable notifications\" />\n      <Checkbox label=\"Accept terms and conditions\" />\n      <Checkbox label=\"Subscribe to newsletter\" />\n    </Stack>\n  ),\n};",
+      "fileName": "story-aa23db1a.stories.tsx"
+    },
+    {
+      "id": "ce8f93106d46ba18",
+      "timestamp": 1765663366767,
+      "prompt": "Now add a couple of checkboxes",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack>\n      <Button>Click Me</Button>\n      <Switch label=\"Toggle Option\" />\n      <Checkbox label=\"Option 1\" defaultChecked />\n      <Checkbox label=\"Option 2\" />\n    </Stack>\n  ),\n};",
+      "fileName": "story-f7d623c6.stories.tsx"
+    },
+    {
+      "id": "dd0235f47f41cab5",
+      "timestamp": 1765663953744,
+      "prompt": "Now add a couple of checkboxes",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack>\n      <Button>Click me</Button>\n      <Switch label=\"Toggle this switch\" />\n      <Checkbox label=\"Option 1\" />\n      <Checkbox label=\"Option 2\" />\n    </Stack>\n  ),\n};",
+      "fileName": "story-1268681b.stories.tsx"
+    },
+    {
+      "id": "6093e362703ed377",
+      "timestamp": 1765664288490,
+      "prompt": "Now add a checkbox",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack>\n      <Button>Click Me</Button>\n      <Switch label=\"Toggle me\" />\n      <Checkbox label=\"Check me\" />\n    </Stack>\n  ),\n};",
+      "fileName": "story-cda44b93.stories.tsx"
+    },
+    {
+      "id": "18a992b0fc21f23b",
+      "timestamp": 1765664568593,
+      "prompt": "Make it red",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Button',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Button',\n    color: 'red',\n  },\n};\n\nexport const RedVariant: Story = {\n  args: {\n    children: 'Red Button',\n    color: 'red',\n    variant: 'filled',\n  },\n};\n\nexport const RedOutline: Story = {\n  args: {\n    children: 'Red Outline',\n    color: 'red',\n    variant: 'outline',\n  },\n};\n\nexport const RedLight: Story = {\n  args: {\n    children: 'Red Light',\n    color: 'red',\n    variant: 'light',\n  },\n};",
+      "fileName": "story-c5783dc4.stories.tsx"
+    },
+    {
+      "id": "5a82552f827f659f",
+      "timestamp": 1765664763505,
+      "prompt": "Make it green",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Switch, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Switch> = {\n  title: 'Generated/Switch Component',\n  component: Switch,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack>\n      <Switch label=\"Enable notifications\" color=\"green\" defaultChecked />\n      <Switch label=\"Auto-save changes\" color=\"green\" />\n      <Switch label=\"Dark mode\" color=\"green\" />\n      <Switch label=\"Show status\" color=\"green\" defaultChecked />\n    </Stack>\n  ),\n};\n\nexport const SingleSwitch: Story = {\n  args: {\n    label: 'Toggle feature',\n    color: 'green',\n  },\n};\n\nexport const Checked: Story = {\n  args: {\n    label: 'Enabled feature',\n    color: 'green',\n    defaultChecked: true,\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    label: 'Disabled switch',\n    color: 'green',\n    disabled: true,\n  },\n};",
+      "fileName": "story-f0029b10.stories.tsx"
+    },
+    {
+      "id": "2acf5af8e54af87e",
+      "timestamp": 1765665057999,
+      "prompt": "Make it purple",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Badge, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Badge Display',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Badge color=\"violet\" variant=\"filled\">\n        Purple Badge\n      </Badge>\n      <Badge color=\"violet\" variant=\"light\">\n        Light Purple\n      </Badge>\n      <Badge color=\"violet\" variant=\"outline\">\n        Outline Purple\n      </Badge>\n      <Badge color=\"grape\" variant=\"filled\">\n        Grape Badge\n      </Badge>\n    </Stack>\n  ),\n};",
+      "fileName": "story-4e9679b7.stories.tsx"
+    },
+    {
+      "id": "0a5b5a82f0ce77f7",
+      "timestamp": 1765665459966,
+      "prompt": "Make it disabled",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Checkbox, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Checkbox> = {\n  title: 'Generated/Checkbox',\n  component: Checkbox,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack>\n      <Checkbox label=\"Accept terms and conditions\" disabled />\n      <Checkbox label=\"Subscribe to newsletter\" disabled />\n      <Checkbox label=\"Enable notifications\" disabled defaultChecked />\n    </Stack>\n  ),\n};\n\nexport const Single: Story = {\n  args: {\n    label: 'I agree to the terms',\n    disabled: true,\n  },\n};\n\nexport const Checked: Story = {\n  args: {\n    label: 'Pre-selected option',\n    disabled: true,\n    defaultChecked: true,\n  },\n};",
+      "fileName": "story-107dbf85.stories.tsx"
+    },
+    {
+      "id": "a96e5034f86f80f8",
+      "timestamp": 1765665921375,
+      "prompt": "Make it checked",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { RadioGroup, Radio, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Radio Button',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <RadioGroup defaultValue=\"checked\">\n      <Stack>\n        <Radio value=\"checked\" label=\"Checked Option\" />\n        <Radio value=\"option2\" label=\"Option 2\" />\n        <Radio value=\"option3\" label=\"Option 3\" />\n      </Stack>\n    </RadioGroup>\n  ),\n};\n\nexport const SingleChecked: Story = {\n  render: () => (\n    <Radio value=\"single\" label=\"Single Checked Radio\" checked readOnly />\n  ),\n};",
+      "fileName": "story-7f39d4d4.stories.tsx"
+    },
+    {
+      "id": "10fc0368d3bb9b81",
+      "timestamp": 1765666265737,
+      "prompt": "Make it red",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Badge } from '@mantine/core';\n\nconst meta: Meta<typeof Badge> = {\n  title: 'Generated/Badge',\n  component: Badge,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Badge',\n    color: 'red',\n  },\n};\n\nexport const RedVariant: Story = {\n  args: {\n    children: 'Red Badge',\n    color: 'red',\n    variant: 'filled',\n  },\n};\n\nexport const RedOutline: Story = {\n  args: {\n    children: 'Red Outline',\n    color: 'red',\n    variant: 'outline',\n  },\n};\n\nexport const RedLight: Story = {\n  args: {\n    children: 'Red Light',\n    color: 'red',\n    variant: 'light',\n  },\n};",
+      "fileName": "story-865ffc8b.stories.tsx"
+    },
+    {
+      "id": "4fdf55642e6b1504",
+      "timestamp": 1765667086617,
+      "prompt": "Make it blue",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Badge } from '@mantine/core';\n\nconst meta: Meta<typeof Badge> = {\n  title: 'Generated/Simple Badge',\n  component: Badge,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Badge',\n    color: 'blue',\n  },\n};\n\nexport const BlueFilled: Story = {\n  args: {\n    children: 'Blue Badge',\n    color: 'blue',\n    variant: 'filled',\n  },\n};\n\nexport const BlueOutline: Story = {\n  args: {\n    children: 'Blue Badge',\n    color: 'blue',\n    variant: 'outline',\n  },\n};\n\nexport const BlueLight: Story = {\n  args: {\n    children: 'Blue Badge',\n    color: 'blue',\n    variant: 'light',\n  },\n};",
+      "fileName": "story-7a35ca9e.stories.tsx"
+    },
+    {
+      "id": "631ae7463928416d",
+      "timestamp": 1765667370478,
+      "prompt": "Change the color to red",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Alert, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Simple Alert Component',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack style={{ width: '500px' }}>\n      <Alert color=\"red\" title=\"Error Alert\">\n        This is an error alert with red color. Please review the information carefully.\n      </Alert>\n      \n      <Alert color=\"red\" variant=\"filled\" title=\"Critical Error\">\n        This is a filled variant error alert with important information.\n      </Alert>\n      \n      <Alert color=\"red\" variant=\"light\" title=\"Warning\">\n        This is a light variant red alert for less critical notifications.\n      </Alert>\n    </Stack>\n  ),\n};\n\nexport const SimpleRed: Story = {\n  render: () => (\n    <Alert color=\"red\" title=\"Alert Title\">\n      This is a simple red alert message.\n    </Alert>\n  ),\n};\n\nexport const WithoutTitle: Story = {\n  render: () => (\n    <Alert color=\"red\">\n      A red alert without a title, just the message content.\n    </Alert>\n  ),\n};",
+      "fileName": "story-72a13977.stories.tsx"
     }
   ],
-  "currentVersionId": "a9299aec2c5b1867"
+  "currentVersionId": "631ae7463928416d"
 }

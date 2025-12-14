@@ -73,12 +73,12 @@
   },
   {
     "title": "Button",
-    "fileName": "button-9cf20eae.stories.tsx",
-    "storyId": "story-9cf20eae",
-    "hash": "9cf20eae",
+    "fileName": "story-c5783dc4.stories.tsx",
+    "storyId": "story-c5783dc4",
+    "hash": "c5783dc4",
     "createdAt": "2025-12-03T19:15:57.392Z",
-    "updatedAt": "2025-12-03T19:15:57.392Z",
-    "prompt": "make a button"
+    "updatedAt": "2025-12-13T22:22:48.593Z",
+    "prompt": "Make it red"
   },
   {
     "title": "Two Checkboxes",
@@ -169,5 +169,86 @@
     "createdAt": "2025-12-05T12:22:47.958Z",
     "updatedAt": "2025-12-05T12:22:47.958Z",
     "prompt": "Create a button group with primary and secondary actions"
+  },
+  {
+    "title": "Button and Switch",
+    "fileName": "story-cda44b93.stories.tsx",
+    "storyId": "story-cda44b93",
+    "hash": "cda44b93",
+    "createdAt": "2025-12-13T21:49:45.893Z",
+    "updatedAt": "2025-12-13T22:18:08.489Z",
+    "prompt": "Now add a checkbox"
+  },
+  {
+    "title": "Switch Component",
+    "fileName": "story-f0029b10.stories.tsx",
+    "storyId": "story-f0029b10",
+    "hash": "f0029b10",
+    "createdAt": "2025-12-13T22:25:37.910Z",
+    "updatedAt": "2025-12-13T22:26:03.505Z",
+    "prompt": "Make it green"
+  },
+  {
+    "title": "Badge Display",
+    "fileName": "story-4e9679b7.stories.tsx",
+    "storyId": "story-4e9679b7",
+    "hash": "4e9679b7",
+    "createdAt": "2025-12-13T22:30:30.481Z",
+    "updatedAt": "2025-12-13T22:30:57.999Z",
+    "prompt": "Make it purple"
+  },
+  {
+    "title": "Checkbox",
+    "fileName": "story-107dbf85.stories.tsx",
+    "storyId": "story-107dbf85",
+    "hash": "107dbf85",
+    "createdAt": "2025-12-13T22:36:55.497Z",
+    "updatedAt": "2025-12-13T22:37:39.966Z",
+    "prompt": "Make it disabled"
+  },
+  {
+    "title": "Radio Button",
+    "fileName": "story-7f39d4d4.stories.tsx",
+    "storyId": "story-7f39d4d4",
+    "hash": "7f39d4d4",
+    "createdAt": "2025-12-13T22:41:00.052Z",
+    "updatedAt": "2025-12-13T22:45:21.374Z",
+    "prompt": "Make it checked"
+  },
+  {
+    "title": "Badge",
+    "fileName": "story-865ffc8b.stories.tsx",
+    "storyId": "story-865ffc8b",
+    "hash": "865ffc8b",
+    "createdAt": "2025-12-13T22:50:39.878Z",
+    "updatedAt": "2025-12-13T22:51:05.736Z",
+    "prompt": "Make it red"
+  },
+  {
+    "title": "Chip Component",
+    "fileName": "chip-component-34fd9067.stories.tsx",
+    "storyId": "story-34fd9067",
+    "hash": "34fd9067",
+    "createdAt": "2025-12-13T22:54:40.954Z",
+    "updatedAt": "2025-12-13T22:54:40.954Z",
+    "prompt": "Show me a chip"
+  },
+  {
+    "title": "Simple Badge",
+    "fileName": "story-7a35ca9e.stories.tsx",
+    "storyId": "story-7a35ca9e",
+    "hash": "7a35ca9e",
+    "createdAt": "2025-12-13T23:04:12.866Z",
+    "updatedAt": "2025-12-13T23:04:46.617Z",
+    "prompt": "Make it blue"
+  },
+  {
+    "title": "Simple Alert Component",
+    "fileName": "simple-alert-component-a4116a9c.stories.tsx",
+    "storyId": "story-a4116a9c",
+    "hash": "a4116a9c",
+    "createdAt": "2025-12-13T23:09:02.561Z",
+    "updatedAt": "2025-12-13T23:18:56.240Z",
+    "prompt": "Change the color to red"
   }
 ]

@@ -1,0 +1,14 @@
+{
+  "storyId": "simple-badge",
+  "title": "Simple Badge",
+  "versions": [
+    {
+      "id": "96dbba2b96923ac1",
+      "timestamp": 1765667052867,
+      "prompt": "Show me a simple badge",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Badge } from '@mantine/core';\n\nconst meta: Meta<typeof Badge> = {\n  title: 'Generated/Simple Badge',\n  component: Badge,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: 'select',\n      options: ['filled', 'light', 'outline', 'dot'],\n    },\n    color: {\n      control: 'select',\n      options: ['blue', 'red', 'green', 'yellow', 'gray'],\n    },\n    size: {\n      control: 'select',\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Badge',\n  },\n};\n\nexport const Filled: Story = {\n  args: {\n    variant: 'filled',\n    children: 'Filled Badge',\n  },\n};\n\nexport const Light: Story = {\n  args: {\n    variant: 'light',\n    children: 'Light Badge',\n  },\n};\n\nexport const Outline: Story = {\n  args: {\n    variant: 'outline',\n    children: 'Outline Badge',\n  },\n};\n\nexport const WithColor: Story = {\n  args: {\n    color: 'red',\n    children: 'Red Badge',\n  },\n};\n\nexport const Small: Story = {\n  args: {\n    size: 'sm',\n    children: 'Small',\n  },\n};\n\nexport const Large: Story = {\n  args: {\n    size: 'lg',\n    children: 'Large',\n  },\n};",
+      "fileName": "simple-badge-7a35ca9e.stories.tsx"
+    }
+  ],
+  "currentVersionId": "96dbba2b96923ac1"
+}

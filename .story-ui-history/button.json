@@ -1,0 +1,14 @@
+{
+  "storyId": "button",
+  "title": "Button",
+  "versions": [
+    {
+      "id": "00dab2dd964203ed",
+      "timestamp": 1765664535730,
+      "prompt": "Show me a button",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Button',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: 'select',\n      options: ['filled', 'light', 'outline', 'subtle', 'default'],\n    },\n    size: {\n      control: 'select',\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n    color: {\n      control: 'select',\n      options: ['blue', 'red', 'green', 'yellow', 'gray'],\n    },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Button',\n  },\n};\n\nexport const Filled: Story = {\n  args: {\n    variant: 'filled',\n    children: 'Filled Button',\n  },\n};\n\nexport const Outline: Story = {\n  args: {\n    variant: 'outline',\n    children: 'Outline Button',\n  },\n};\n\nexport const Light: Story = {\n  args: {\n    variant: 'light',\n    children: 'Light Button',\n  },\n};\n\nexport const Subtle: Story = {\n  args: {\n    variant: 'subtle',\n    children: 'Subtle Button',\n  },\n};\n\nexport const Large: Story = {\n  args: {\n    size: 'lg',\n    children: 'Large Button',\n  },\n};\n\nexport const Small: Story = {\n  args: {\n    size: 'sm',\n    children: 'Small Button',\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    disabled: true,\n    children: 'Disabled Button',\n  },\n};\n\nexport const Loading: Story = {\n  args: {\n    loading: true,\n    children: 'Loading Button',\n  },\n};",
+      "fileName": "button-c5783dc4.stories.tsx"
+    }
+  ],
+  "currentVersionId": "00dab2dd964203ed"
+}

@@ -1,0 +1,14 @@
+{
+  "storyId": "switch-component",
+  "title": "Switch Component",
+  "versions": [
+    {
+      "id": "72ae4b06c046e187",
+      "timestamp": 1765664737911,
+      "prompt": "Show me a switch",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Switch, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Switch> = {\n  title: 'Generated/Switch Component',\n  component: Switch,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: 'select',\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n    color: {\n      control: 'select',\n      options: ['blue', 'red', 'green', 'yellow', 'cyan', 'pink', 'grape'],\n    },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    label: 'Toggle switch',\n  },\n};\n\nexport const Checked: Story = {\n  args: {\n    label: 'Toggle switch',\n    defaultChecked: true,\n  },\n};\n\nexport const Disabled: Story = {\n  args: {\n    label: 'Disabled switch',\n    disabled: true,\n  },\n};\n\nexport const WithDescription: Story = {\n  args: {\n    label: 'Enable notifications',\n    description: 'Receive email notifications about your account activity',\n  },\n};\n\nexport const Sizes: Story = {\n  render: () => (\n    <Stack>\n      <Switch size=\"xs\" label=\"Extra small switch\" />\n      <Switch size=\"sm\" label=\"Small switch\" />\n      <Switch size=\"md\" label=\"Medium switch\" />\n      <Switch size=\"lg\" label=\"Large switch\" />\n      <Switch size=\"xl\" label=\"Extra large switch\" />\n    </Stack>\n  ),\n};\n\nexport const Colors: Story = {\n  render: () => (\n    <Stack>\n      <Switch color=\"blue\" label=\"Blue switch\" defaultChecked />\n      <Switch color=\"red\" label=\"Red switch\" defaultChecked />\n      <Switch color=\"green\" label=\"Green switch\" defaultChecked />\n      <Switch color=\"cyan\" label=\"Cyan switch\" defaultChecked />\n      <Switch color=\"pink\" label=\"Pink switch\" defaultChecked />\n    </Stack>\n  ),\n};",
+      "fileName": "switch-component-f0029b10.stories.tsx"
+    }
+  ],
+  "currentVersionId": "72ae4b06c046e187"
+}

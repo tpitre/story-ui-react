@@ -1,0 +1,14 @@
+{
+  "storyId": "chip-component",
+  "title": "Chip Component",
+  "versions": [
+    {
+      "id": "85fed0126a5d8366",
+      "timestamp": 1765666480955,
+      "prompt": "Show me a chip",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Chip, ChipGroup, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Chip> = {\n  title: 'Generated/Chip Component',\n  component: Chip,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Chip',\n  },\n};\n\nexport const Checked: Story = {\n  args: {\n    children: 'Selected Chip',\n    checked: true,\n  },\n};\n\nexport const Variants: Story = {\n  render: () => (\n    <Stack>\n      <Chip>Default Chip</Chip>\n      <Chip variant=\"filled\">Filled Chip</Chip>\n      <Chip variant=\"outline\">Outline Chip</Chip>\n    </Stack>\n  ),\n};\n\nexport const Colors: Story = {\n  render: () => (\n    <Stack>\n      <Chip color=\"blue\">Blue Chip</Chip>\n      <Chip color=\"green\">Green Chip</Chip>\n      <Chip color=\"red\">Red Chip</Chip>\n      <Chip color=\"yellow\">Yellow Chip</Chip>\n    </Stack>\n  ),\n};\n\nexport const ChipGroupExample: Story = {\n  render: () => (\n    <ChipGroup>\n      <Chip value=\"react\">React</Chip>\n      <Chip value=\"vue\">Vue</Chip>\n      <Chip value=\"angular\">Angular</Chip>\n      <Chip value=\"svelte\">Svelte</Chip>\n    </ChipGroup>\n  ),\n};\n\nexport const MultipleSelection: Story = {\n  render: () => (\n    <ChipGroup multiple>\n      <Chip value=\"javascript\">JavaScript</Chip>\n      <Chip value=\"typescript\">TypeScript</Chip>\n      <Chip value=\"python\">Python</Chip>\n      <Chip value=\"java\">Java</Chip>\n    </ChipGroup>\n  ),\n};",
+      "fileName": "chip-component-34fd9067.stories.tsx"
+    }
+  ],
+  "currentVersionId": "85fed0126a5d8366"
+}
