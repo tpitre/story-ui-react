@@ -1,0 +1,14 @@
+{
+  "storyId": "badge-component-delete-test-3",
+  "title": "Badge Component Delete Test 3",
+  "versions": [
+    {
+      "id": "e957bd2a6a63815b",
+      "timestamp": 1765682482856,
+      "prompt": "Create a badge component for delete test 3",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Badge, Group } from '@mantine/core';\n\nconst meta: Meta<typeof Badge> = {\n  title: 'Generated/Badge Component - Delete Test 3',\n  component: Badge,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    color: {\n      control: 'select',\n      options: ['blue', 'red', 'green', 'yellow', 'gray', 'pink', 'violet'],\n    },\n    variant: {\n      control: 'select',\n      options: ['filled', 'light', 'outline', 'dot'],\n    },\n    size: {\n      control: 'select',\n      options: ['xs', 'sm', 'md', 'lg', 'xl'],\n    },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Delete Test 3',\n    color: 'red',\n  },\n};\n\nexport const Filled: Story = {\n  args: {\n    children: 'Delete Test 3',\n    color: 'red',\n    variant: 'filled',\n  },\n};\n\nexport const Light: Story = {\n  args: {\n    children: 'Delete Test 3',\n    color: 'red',\n    variant: 'light',\n  },\n};\n\nexport const Outline: Story = {\n  args: {\n    children: 'Delete Test 3',\n    color: 'red',\n    variant: 'outline',\n  },\n};\n\nexport const Dot: Story = {\n  args: {\n    children: 'Delete Test 3',\n    color: 'red',\n    variant: 'dot',\n  },\n};\n\nexport const Sizes: Story = {\n  render: () => (\n    <Group gap=\"md\">\n      <Badge size=\"xs\" color=\"red\">Delete Test 3</Badge>\n      <Badge size=\"sm\" color=\"red\">Delete Test 3</Badge>\n      <Badge size=\"md\" color=\"red\">Delete Test 3</Badge>\n      <Badge size=\"lg\" color=\"red\">Delete Test 3</Badge>\n      <Badge size=\"xl\" color=\"red\">Delete Test 3</Badge>\n    </Group>\n  ),\n};\n\nexport const Colors: Story = {\n  render: () => (\n    <Group gap=\"md\">\n      <Badge color=\"red\">Delete Test 3</Badge>\n      <Badge color=\"blue\">Delete Test 3</Badge>\n      <Badge color=\"green\">Delete Test 3</Badge>\n      <Badge color=\"yellow\">Delete Test 3</Badge>\n      <Badge color=\"gray\">Delete Test 3</Badge>\n      <Badge color=\"pink\">Delete Test 3</Badge>\n      <Badge color=\"violet\">Delete Test 3</Badge>\n    </Group>\n  ),\n};",
+      "fileName": "badge-component-delete-test-3-622f452a.stories.tsx"
+    }
+  ],
+  "currentVersionId": "e957bd2a6a63815b"
+}

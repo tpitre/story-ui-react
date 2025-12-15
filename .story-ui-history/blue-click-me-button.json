@@ -1,0 +1,14 @@
+{
+  "storyId": "blue-click-me-button",
+  "title": "Blue Click Me Button",
+  "versions": [
+    {
+      "id": "bd50b15ec1f3dc52",
+      "timestamp": 1765752666146,
+      "prompt": "Create a simple blue Button that says Click Me",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Blue Click Me Button (3d34ab80)',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'Click Me',\n    color: 'blue',\n  },\n};\n\nexport const BlueVariants: Story = {\n  render: () => (\n    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>\n      <Button color=\"blue\" variant=\"filled\">\n        Click Me\n      </Button>\n      <Button color=\"blue\" variant=\"outline\">\n        Click Me\n      </Button>\n      <Button color=\"blue\" variant=\"light\">\n        Click Me\n      </Button>\n      <Button color=\"blue\" variant=\"subtle\">\n        Click Me\n      </Button>\n    </div>\n  ),\n};",
+      "fileName": "blue-click-me-button-3d34ab80.stories.tsx"
+    }
+  ],
+  "currentVersionId": "bd50b15ec1f3dc52"
+}

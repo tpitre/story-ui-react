@@ -1,0 +1,14 @@
+{
+  "storyId": "delete-test-button",
+  "title": "Delete Test Button",
+  "versions": [
+    {
+      "id": "36ad658a5289f61a",
+      "timestamp": 1765682387280,
+      "prompt": "Create a simple delete test button",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Delete Test Button',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    color: 'red',\n    children: 'Delete',\n  },\n};\n\nexport const WithConfirmation: Story = {\n  render: () => (\n    <Button \n      color=\"red\" \n      variant=\"filled\"\n      onClick={() => {\n        if (window.confirm('Are you sure you want to delete this item?')) {\n          alert('Item deleted');\n        }\n      }}\n    >\n      Delete Test\n    </Button>\n  ),\n};\n\nexport const Outline: Story = {\n  args: {\n    color: 'red',\n    variant: 'outline',\n    children: 'Delete',\n  },\n};\n\nexport const Subtle: Story = {\n  args: {\n    color: 'red',\n    variant: 'subtle',\n    children: 'Delete',\n  },\n};\n\nexport const WithIcon: Story = {\n  render: () => (\n    <Button color=\"red\" variant=\"filled\">\n      🗑️ Delete Test\n    </Button>\n  ),\n};",
+      "fileName": "delete-test-button-c7fa68f9.stories.tsx"
+    }
+  ],
+  "currentVersionId": "36ad658a5289f61a"
+}

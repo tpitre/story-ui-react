@@ -1,0 +1,14 @@
+{
+  "storyId": "delete-test-4-alert",
+  "title": "Delete Test 4 Alert",
+  "versions": [
+    {
+      "id": "eba48a23cecbc36d",
+      "timestamp": 1765682531752,
+      "prompt": "Create an alert for delete test 4",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Alert, Button, Stack, Text } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Delete Test 4 Alert',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const DeleteTest4: Story = {\n  render: () => (\n    <Stack style={{ maxWidth: 500, width: '100%' }}>\n      <Alert color=\"red\" title=\"Delete Confirmation\" variant=\"filled\">\n        <Text size=\"sm\" style={{ marginBottom: '12px' }}>\n          Are you sure you want to delete \"Test 4\"? This action cannot be undone and all associated data will be permanently removed.\n        </Text>\n        <Stack style={{ gap: '8px', marginTop: '16px' }}>\n          <Button color=\"white\" variant=\"outline\" size=\"sm\">\n            Cancel\n          </Button>\n          <Button color=\"red\" variant=\"filled\" size=\"sm\">\n            Delete Test 4\n          </Button>\n        </Stack>\n      </Alert>\n    </Stack>\n  ),\n};\n\nexport const DeleteWarning: Story = {\n  render: () => (\n    <Stack style={{ maxWidth: 500, width: '100%' }}>\n      <Alert color=\"red\" title=\"Warning: Delete Test 4\" variant=\"light\">\n        <Text size=\"sm\">\n          You are about to delete \"Test 4\". This will permanently remove all data associated with this test. Please confirm to proceed.\n        </Text>\n      </Alert>\n    </Stack>\n  ),\n};\n\nexport const DeleteError: Story = {\n  render: () => (\n    <Stack style={{ maxWidth: 500, width: '100%' }}>\n      <Alert color=\"red\" title=\"Failed to Delete\" variant=\"outline\">\n        <Text size=\"sm\">\n          Unable to delete \"Test 4\". This item may be in use or you may not have sufficient permissions to perform this action.\n        </Text>\n      </Alert>\n    </Stack>\n  ),\n};",
+      "fileName": "delete-test-4-alert-d3acb633.stories.tsx"
+    }
+  ],
+  "currentVersionId": "eba48a23cecbc36d"
+}

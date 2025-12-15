@@ -1,0 +1,14 @@
+{
+  "storyId": "alert-component",
+  "title": "Alert Component",
+  "versions": [
+    {
+      "id": "bb3834d708b720f2",
+      "timestamp": 1765752329807,
+      "prompt": "Create a simple Alert component",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Alert } from '@mantine/core';\n\nconst meta: Meta<typeof Alert> = {\n  title: 'Generated/Alert Component (10e5f2e4)',\n  component: Alert,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n  argTypes: {\n    color: {\n      control: 'select',\n      options: ['blue', 'red', 'green', 'yellow', 'orange'],\n    },\n    variant: {\n      control: 'select',\n      options: ['filled', 'light', 'outline'],\n    },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Default: Story = {\n  args: {\n    children: 'This is a default alert message',\n  },\n};\n\nexport const Info: Story = {\n  args: {\n    color: 'blue',\n    title: 'Information',\n    children: 'This is an informational alert with additional context.',\n  },\n};\n\nexport const Warning: Story = {\n  args: {\n    color: 'yellow',\n    title: 'Warning',\n    children: 'This is a warning alert. Please review before proceeding.',\n  },\n};\n\nexport const Error: Story = {\n  args: {\n    color: 'red',\n    title: 'Error',\n    children: 'Something went wrong. Please try again later.',\n  },\n};\n\nexport const Success: Story = {\n  args: {\n    color: 'green',\n    title: 'Success',\n    children: 'Your action was completed successfully!',\n  },\n};\n\nexport const WithoutTitle: Story = {\n  args: {\n    color: 'blue',\n    variant: 'light',\n    children: 'This alert doesn\\'t have a title, just a simple message.',\n  },\n};\n\nexport const Outlined: Story = {\n  args: {\n    color: 'orange',\n    variant: 'outline',\n    title: 'Outlined Alert',\n    children: 'This is an outlined alert variant.',\n  },\n};",
+      "fileName": "alert-component-10e5f2e4.stories.tsx"
+    }
+  ],
+  "currentVersionId": "bb3834d708b720f2"
+}

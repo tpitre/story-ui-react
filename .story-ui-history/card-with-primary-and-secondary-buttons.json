@@ -1,0 +1,14 @@
+{
+  "storyId": "card-with-primary-and-secondary-buttons",
+  "title": "Card With Primary And Secondary Buttons",
+  "versions": [
+    {
+      "id": "103ca373eb0c14b6",
+      "timestamp": 1765746860174,
+      "prompt": "Edit this card to add a secondary outlined button next to the primary button",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Card, CardSection, Button, Text, Title, Group, Image } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Card with Primary and Secondary Buttons (308aa8e5)',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const CardWithTwoButtons: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 340 }}>\n      <CardSection>\n        <Image\n          src=\"https://picsum.photos/340/160?random=1\"\n          height={160}\n          alt=\"Card image\"\n        />\n      </CardSection>\n\n      <Title order={3} mt=\"md\" mb=\"xs\">\n        Product Title\n      </Title>\n\n      <Text size=\"sm\" c=\"dimmed\">\n        This is a description of the product or service. It provides helpful information to the user about what they're viewing.\n      </Text>\n\n      <Group mt=\"md\" gap=\"sm\">\n        <Button variant=\"filled\" flex={1}>\n          Primary Action\n        </Button>\n        <Button variant=\"outline\" flex={1}>\n          Secondary\n        </Button>\n      </Group>\n    </Card>\n  ),\n};\n\nexport const CardWithStackedButtons: Story = {\n  render: () => (\n    <Card shadow=\"sm\" padding=\"lg\" radius=\"md\" withBorder style={{ width: 340 }}>\n      <CardSection>\n        <Image\n          src=\"https://picsum.photos/340/160?random=2\"\n          height={160}\n          alt=\"Card image\"\n        />\n      </CardSection>\n\n      <Title order={3} mt=\"md\" mb=\"xs\">\n        Featured Product\n      </Title>\n\n      <Text size=\"sm\" c=\"dimmed\" mb=\"md\">\n        Premium quality product with exceptional features. Get yours today and experience the difference.\n      </Text>\n\n      <Group mt=\"md\" gap=\"sm\" grow>\n        <Button variant=\"filled\">\n          Buy Now\n        </Button>\n        <Button variant=\"outline\">\n          Learn More\n        </Button>\n      </Group>\n    </Card>\n  ),\n};",
+      "fileName": "card-with-primary-and-secondary-buttons-308aa8e5.stories.tsx"
+    }
+  ],
+  "currentVersionId": "103ca373eb0c14b6"
+}

@@ -1,0 +1,14 @@
+{
+  "storyId": "button-cancel-red",
+  "title": "Button Cancel Red",
+  "versions": [
+    {
+      "id": "5240f49172c9fd67",
+      "timestamp": 1765752708993,
+      "prompt": "Create a simple red Button that says Cancel",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button } from '@mantine/core';\n\nconst meta: Meta<typeof Button> = {\n  title: 'Generated/Button - Cancel Red (7eba112f)',\n  component: Button,\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const Cancel: Story = {\n  args: {\n    color: 'red',\n    children: 'Cancel',\n  },\n};",
+      "fileName": "button-cancel-red-7eba112f.stories.tsx"
+    }
+  ],
+  "currentVersionId": "5240f49172c9fd67"
+}

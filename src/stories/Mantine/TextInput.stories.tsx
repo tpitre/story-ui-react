@@ -29,6 +29,7 @@ export const WithDescription: Story = {
       description="We'll never share your email"
       placeholder="you@email.com"
       style={{ width: 300 }}
+      inputWrapperOrder={['description', 'input', 'label']}
     />
   ),
 };

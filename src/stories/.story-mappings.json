@@ -73,12 +73,12 @@
   },
   {
     "title": "Button",
-    "fileName": "story-c5783dc4.stories.tsx",
-    "storyId": "story-c5783dc4",
-    "hash": "c5783dc4",
+    "fileName": "button-256a5789.stories.tsx",
+    "storyId": "story-256a5789",
+    "hash": "256a5789",
     "createdAt": "2025-12-03T19:15:57.392Z",
-    "updatedAt": "2025-12-13T22:22:48.593Z",
-    "prompt": "Make it red"
+    "updatedAt": "2025-12-14T23:03:39.046Z",
+    "prompt": "Create a Button"
   },
   {
     "title": "Two Checkboxes",
@@ -118,12 +118,12 @@
   },
   {
     "title": "Notification Badge",
-    "fileName": "notification-badge-a405ca99.stories.tsx",
-    "storyId": "story-a405ca99",
-    "hash": "a405ca99",
+    "fileName": "notification-badge-ba5aadce.stories.tsx",
+    "storyId": "story-ba5aadce",
+    "hash": "ba5aadce",
     "createdAt": "2025-12-04T11:21:31.182Z",
-    "updatedAt": "2025-12-04T11:21:31.182Z",
-    "prompt": "Create a notification badge component"
+    "updatedAt": "2025-12-14T23:45:35.313Z",
+    "prompt": "A notification badge"
   },
   {
     "title": "Success Alert Message",
@@ -145,12 +145,12 @@
   },
   {
     "title": "Responsive Card with Image and Text",
-    "fileName": "story-dc9d9f44.stories.tsx",
-    "storyId": "story-dc9d9f44",
-    "hash": "dc9d9f44",
+    "fileName": "responsive-card-with-image-and-text-7c2075b5.stories.tsx",
+    "storyId": "story-7c2075b5",
+    "hash": "7c2075b5",
     "createdAt": "2025-12-05T04:12:48.384Z",
-    "updatedAt": "2025-12-06T21:23:49.466Z",
-    "prompt": "Create a simple button"
+    "updatedAt": "2025-12-14T23:06:00.940Z",
+    "prompt": "Create a responsive card with image, title, and description"
   },
   {
     "title": "Card with Image and Text",
@@ -163,11 +163,11 @@
   },
   {
     "title": "Button Group - Primary and Secondary Actions",
-    "fileName": "button-group-primary-and-secondary-actions-263e2c9e.stories.tsx",
-    "storyId": "story-263e2c9e",
-    "hash": "263e2c9e",
+    "fileName": "button-group-primary-and-secondary-actions-945a143e.stories.tsx",
+    "storyId": "story-945a143e",
+    "hash": "945a143e",
     "createdAt": "2025-12-05T12:22:47.958Z",
-    "updatedAt": "2025-12-05T12:22:47.958Z",
+    "updatedAt": "2025-12-14T23:01:56.338Z",
     "prompt": "Create a button group with primary and secondary actions"
   },
   {
@@ -250,5 +250,95 @@
     "createdAt": "2025-12-13T23:09:02.561Z",
     "updatedAt": "2025-12-13T23:18:56.240Z",
     "prompt": "Change the color to red"
+  },
+  {
+    "title": "Delete Test Button",
+    "fileName": "delete-test-button-c7fa68f9.stories.tsx",
+    "storyId": "story-c7fa68f9",
+    "hash": "c7fa68f9",
+    "createdAt": "2025-12-14T03:19:47.280Z",
+    "updatedAt": "2025-12-14T03:19:47.280Z",
+    "prompt": "Create a simple delete test button"
+  },
+  {
+    "title": "Simple Card - Delete Test 2",
+    "fileName": "simple-card-delete-test-2-28a8898c.stories.tsx",
+    "storyId": "story-28a8898c",
+    "hash": "28a8898c",
+    "createdAt": "2025-12-14T03:20:36.242Z",
+    "updatedAt": "2025-12-14T03:20:36.242Z",
+    "prompt": "Create a simple card component for delete test 2"
+  },
+  {
+    "title": "Badge Component - Delete Test 3",
+    "fileName": "badge-component-delete-test-3-622f452a.stories.tsx",
+    "storyId": "story-622f452a",
+    "hash": "622f452a",
+    "createdAt": "2025-12-14T03:21:22.855Z",
+    "updatedAt": "2025-12-14T03:21:22.855Z",
+    "prompt": "Create a badge component for delete test 3"
+  },
+  {
+    "title": "Delete Test 4 Alert",
+    "fileName": "delete-test-4-alert-d3acb633.stories.tsx",
+    "storyId": "story-d3acb633",
+    "hash": "d3acb633",
+    "createdAt": "2025-12-14T03:22:11.751Z",
+    "updatedAt": "2025-12-14T03:22:11.751Z",
+    "prompt": "Create an alert for delete test 4"
+  },
+  {
+    "title": "Simple Card with Button",
+    "fileName": "simple-card-with-button-ca3b0081.stories.tsx",
+    "storyId": "story-ca3b0081",
+    "hash": "ca3b0081",
+    "createdAt": "2025-12-14T21:13:42.317Z",
+    "updatedAt": "2025-12-14T21:13:42.317Z",
+    "prompt": "Create a simple card with a title, description, and primary button"
+  },
+  {
+    "title": "Card with Primary and Secondary Buttons",
+    "fileName": "card-with-primary-and-secondary-buttons-308aa8e5.stories.tsx",
+    "storyId": "story-308aa8e5",
+    "hash": "308aa8e5",
+    "createdAt": "2025-12-14T21:14:20.173Z",
+    "updatedAt": "2025-12-14T21:14:20.173Z",
+    "prompt": "Edit this card to add a secondary outlined button next to the primary button"
+  },
+  {
+    "title": "Alert Component",
+    "fileName": "alert-component-10e5f2e4.stories.tsx",
+    "storyId": "story-10e5f2e4",
+    "hash": "10e5f2e4",
+    "createdAt": "2025-12-14T22:45:29.806Z",
+    "updatedAt": "2025-12-14T22:45:29.806Z",
+    "prompt": "Create a simple Alert component"
+  },
+  {
+    "title": "Blue Click Me Button",
+    "fileName": "blue-click-me-button-3d34ab80.stories.tsx",
+    "storyId": "story-3d34ab80",
+    "hash": "3d34ab80",
+    "createdAt": "2025-12-14T22:51:06.144Z",
+    "updatedAt": "2025-12-14T22:51:06.144Z",
+    "prompt": "Create a simple blue Button that says Click Me"
+  },
+  {
+    "title": "Button - Cancel Red",
+    "fileName": "button-cancel-red-7eba112f.stories.tsx",
+    "storyId": "story-7eba112f",
+    "hash": "7eba112f",
+    "createdAt": "2025-12-14T22:51:48.992Z",
+    "updatedAt": "2025-12-14T22:51:48.992Z",
+    "prompt": "Create a simple red Button that says Cancel"
+  },
+  {
+    "title": "Toggle Switch",
+    "fileName": "toggle-switch-db340919.stories.tsx",
+    "storyId": "story-db340919",
+    "hash": "db340919",
+    "createdAt": "2025-12-14T23:14:00.033Z",
+    "updatedAt": "2025-12-14T23:14:00.033Z",
+    "prompt": "A toggle switch"
   }
 ]
