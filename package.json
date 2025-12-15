@@ -16,7 +16,7 @@
     "@emotion/react": "^11.14.0",
     "@mantine/core": "^8.3.9",
     "@mantine/hooks": "^8.3.9",
-    "@tpitre/story-ui": "github:southleft/story-ui#0472569386cad0955aa925a9de1038a80971bedb",
+    "@tpitre/story-ui": "^4.1.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
