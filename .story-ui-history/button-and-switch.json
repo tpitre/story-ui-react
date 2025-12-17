@@ -43,7 +43,14 @@
       "prompt": "Show me a button and a switch",
       "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Button>Click Me</Button>\n      <Switch label=\"Toggle Option\" />\n    </Stack>\n  ),\n};\n\nexport const WithVariants: Story = {\n  render: () => (\n    <Stack gap=\"md\">\n      <Button variant=\"filled\">Filled Button</Button>\n      <Button variant=\"outline\">Outline Button</Button>\n      <Switch label=\"Enable Feature\" defaultChecked />\n      <Switch label=\"Disabled Switch\" disabled />\n    </Stack>\n  ),\n};\n\nexport const Interactive: Story = {\n  render: () => (\n    <Stack gap=\"lg\" align=\"flex-start\">\n      <div>\n        <Button size=\"lg\" color=\"blue\">\n          Large Button\n        </Button>\n      </div>\n      <div>\n        <Switch label=\"Notifications\" size=\"md\" />\n      </div>\n      <div>\n        <Button size=\"sm\" variant=\"light\">\n          Small Button\n        </Button>\n      </div>\n      <div>\n        <Switch label=\"Dark Mode\" size=\"lg\" defaultChecked />\n      </div>\n    </Stack>\n  ),\n};",
       "fileName": "button-and-switch-cda44b93.stories.tsx"
+    },
+    {
+      "id": "6e62f65b57e12bf9",
+      "timestamp": 1765859977372,
+      "prompt": "Generate a button and a switch.",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Button, Switch, Stack } from '@mantine/core';\n\nconst meta: Meta = {\n  title: 'Generated/Button and Switch',\n  id: 'button-and-switch-4c673797',\n  parameters: { layout: 'centered' },\n  tags: ['autodocs'],\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  render: () => (\n    <Stack gap=\"md\" align=\"center\">\n      <Button>Click Me</Button>\n      <Switch label=\"Toggle Setting\" />\n    </Stack>\n  ),\n};\n\nexport const WithVariants: Story = {\n  render: () => (\n    <Stack gap=\"md\" align=\"center\">\n      <Button variant=\"filled\">Filled Button</Button>\n      <Button variant=\"outline\">Outline Button</Button>\n      <Button variant=\"light\">Light Button</Button>\n      <Switch label=\"Enable notifications\" defaultChecked />\n      <Switch label=\"Dark mode\" />\n      <Switch label=\"Disabled option\" disabled />\n    </Stack>\n  ),\n};\n\nexport const Interactive: Story = {\n  render: () => (\n    <Stack gap=\"lg\" align=\"center\">\n      <Button size=\"lg\" color=\"blue\">\n        Large Button\n      </Button>\n      <Switch \n        label=\"Auto-save\" \n        description=\"Automatically save changes\"\n        size=\"lg\"\n      />\n    </Stack>\n  ),\n};",
+      "fileName": "button-and-switch-4c673797.stories.tsx"
     }
   ],
-  "currentVersionId": "12686dd3a8018dd1"
+  "currentVersionId": "6e62f65b57e12bf9"
 }

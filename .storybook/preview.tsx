@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react-vite';
 import { MantineProvider, createTheme } from '@mantine/core';
+import { themes } from 'storybook/theming';
 import '@mantine/core/styles.css';
 
 const theme = createTheme({
@@ -15,6 +16,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    docs: {
+      theme: themes.dark,
     },
     a11y: {
       test: 'todo',

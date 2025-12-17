@@ -1,0 +1,14 @@
+{
+  "storyId": "alert-banner-success-message",
+  "title": "Alert Banner Success Message",
+  "versions": [
+    {
+      "id": "e6debe68eb2d54ee",
+      "timestamp": 1765834813861,
+      "prompt": "Create a simple alert banner with success message",
+      "code": "import React from 'react';\nimport type { Meta, StoryObj } from '@storybook/react';\nimport { Alert, CheckIcon, Stack } from '@mantine/core';\n\nconst meta: Meta<typeof Alert> = {\n  title: 'Generated/Alert Banner - Success Message',\n  id: 'alert-banner-success-message-3dd21744',\n  component: Alert,\n  parameters: { layout: 'padded' },\n  tags: ['autodocs'],\n  argTypes: {\n    color: { control: 'color' },\n    variant: {\n      control: 'select',\n      options: ['light', 'filled', 'outline', 'transparent', 'white', 'default'],\n    },\n    radius: { control: 'select', options: ['xs', 'sm', 'md', 'lg', 'xl'] },\n  },\n};\n\nexport default meta;\ntype Story = StoryObj<typeof meta>;\n\nexport const SuccessBanner: Story = {\n  args: {\n    title: 'Success',\n    color: 'green',\n    variant: 'light',\n    withCloseButton: true,\n  },\n  render: (args) => (\n    <Alert {...args}>\n      Your changes have been saved successfully. You can now close this window.\n    </Alert>\n  ),\n};\n\nexport const WithIcon: Story = {\n  args: {\n    title: 'Operation Completed',\n    color: 'teal',\n    variant: 'filled',\n    icon: <CheckIcon style={{ width: '1.2rem', height: '1.2rem' }} />,\n  },\n  render: (args) => (\n    <Alert {...args}>\n      The data export has finished processing. Check your email for the download link.\n    </Alert>\n  ),\n};\n\nexport const SuccessVariants: Story = {\n  render: () => (\n    <Stack>\n      <Alert variant=\"light\" color=\"green\" title=\"Light Variant\">\n        This is a success alert with the light variant style.\n      </Alert>\n      <Alert variant=\"outline\" color=\"green\" title=\"Outline Variant\">\n        This is a success alert with the outline variant style.\n      </Alert>\n      <Alert variant=\"filled\" color=\"green\" title=\"Filled Variant\">\n        This is a success alert with the filled variant style.\n      </Alert>\n    </Stack>\n  ),\n};",
+      "fileName": "alert-banner-success-message-3dd21744.stories.tsx"
+    }
+  ],
+  "currentVersionId": "e6debe68eb2d54ee"
+}
