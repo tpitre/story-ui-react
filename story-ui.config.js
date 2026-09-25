@@ -13,6 +13,6 @@ module.exports = {
     "containerComponent": "Container"
   },
   // Story UI version tracking (auto-generated)
-  _storyUIVersion: '5.18.1',
-  _lastUpdated: '2026-09-25T00:07:53.604Z',
+  _storyUIVersion: '5.18.4',
+  _lastUpdated: '2026-09-25T01:33:36.533Z',
 };;

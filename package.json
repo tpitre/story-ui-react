@@ -17,7 +17,7 @@
     "@mantine/core": "^8.3.9",
     "@mantine/hooks": "^8.3.9",
     "@tabler/icons-react": "^3.36.0",
-    "@tpitre/story-ui": "^5.18.2",
+    "@tpitre/story-ui": "^5.18.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
