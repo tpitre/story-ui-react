@@ -32,7 +32,11 @@ const config: StorybookConfig = {
     // an export named 'default'".
     config.optimizeDeps.include = [
       ...(config.optimizeDeps.include || []),
-      '@tpitre/story-ui > @radix-ui/themes > classnames'
+      '@tpitre/story-ui > @radix-ui/themes > classnames',
+      // The Voice Canvas renders through react-live. Discovered on first use,
+      // Vite re-optimizes mid-session and the page ends up with two Reacts
+      // ("reading 'useState' of null"); pre-bundling it at startup avoids that.
+      'react-live',
     ];
     // NOTE: this used to be `ignored: ['!**/node_modules/@tpitre/story-ui/**']`,
     // which REPLACES Vite's defaults. With only a negated pattern, nothing is
