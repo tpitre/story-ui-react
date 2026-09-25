@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Cache buster - change this to force a fresh npm install
-ARG CACHE_BUST=v441-fix
+ARG CACHE_BUST=v5181-voice-canvas
 
 # Copy package.json only (not package-lock.json to avoid platform-specific rollup issues)
 COPY package.json ./
@@ -31,7 +31,7 @@ EXPOSE ${PORT:-4001}
 
 # Health check - verify MCP server is responding
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:${PORT:-4001}/story-ui/providers || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost:${PORT:-4001}/health || exit 1
 
 # Start both Storybook and MCP server
 CMD ["./start-live.sh"]
