@@ -24,9 +24,26 @@ const preview: Preview = {
       test: 'todo',
     },
   },
+  // A Light/Dark toolbar setting. The Voice Canvas reads globalTypes, so
+  // "dark mode" / "black UI" switches this instead of asking a model to restyle.
+  globalTypes: {
+    theme: {
+      description: 'Mantine color scheme',
+      toolbar: {
+        title: 'Theme',
+        icon: 'mirror',
+        items: [
+          { value: 'light', title: 'Light', icon: 'sun' },
+          { value: 'dark', title: 'Dark', icon: 'moon' },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
+  initialGlobals: { theme: 'light' },
   decorators: [
-    (Story) => (
-      <MantineProvider theme={theme}>
+    (Story, context) => (
+      <MantineProvider theme={theme} forceColorScheme={context.globals.theme === 'dark' ? 'dark' : 'light'}>
         <Story />
       </MantineProvider>
     ),

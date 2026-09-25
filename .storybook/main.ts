@@ -5,6 +5,11 @@ const config: StorybookConfig = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  "tags": {
+    "voice-canvas-internal": {
+      "defaultFilterSelection": "exclude"
+    }
+  },
   "addons": [
     "@chromatic-com/storybook",
     "@storybook/addon-vitest",
@@ -20,10 +25,28 @@ const config: StorybookConfig = {
       ...(config.optimizeDeps.exclude || []),
       '@tpitre/story-ui'
     ];
-    // Also ensure the symlinked package is treated as source code
+    // The excluded package's ESM dist imports @radix-ui/themes, whose ESM
+    // build imports the CJS-only `classnames`. An excluded package's CJS
+    // transitive deps are never interop'd unless included via the `>` chain,
+    // so without this the V2 workspace fails to mount with "does not provide
+    // an export named 'default'".
+    config.optimizeDeps.include = [
+      ...(config.optimizeDeps.include || []),
+      '@tpitre/story-ui > @radix-ui/themes > classnames'
+    ];
+    // NOTE: this used to be `ignored: ['!**/node_modules/@tpitre/story-ui/**']`,
+    // which REPLACES Vite's defaults. With only a negated pattern, nothing is
+    // ignored at all — so the dev server watched the entire node_modules tree
+    // and the file watcher stopped delivering events, which made newly
+    // generated stories never appear in the sidebar. Keep the default
+    // node_modules ignore and un-ignore just the one package.
     config.server = config.server || {};
     config.server.watch = config.server.watch || {};
-    config.server.watch.ignored = ['!**/node_modules/@tpitre/story-ui/**'];
+    config.server.watch.ignored = [
+      '**/.git/**',
+      '**/node_modules/**',
+      '!**/node_modules/@tpitre/story-ui/**',
+    ];
     return config;
   }
 };

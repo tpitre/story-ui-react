@@ -3,3 +3,6 @@
   // This is injected into the Storybook manager context
   window.__STORY_UI_PORT__ = '4101';
 </script>
+<!-- Story UI: the manager page (?path=/workspace/) reads the server port from this tag.
+     Written by `story-ui init`; `story-ui update` refreshes it. -->
+<meta name="story-ui-port" content="4101">
