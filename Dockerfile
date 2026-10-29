@@ -12,13 +12,15 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Cache buster - change this to force a fresh npm install
-ARG CACHE_BUST=v5212-no-empty-cards
+ARG CACHE_BUST=v5230-legacy-peers
 
 # Copy package.json only (not package-lock.json to avoid platform-specific rollup issues)
 COPY package.json ./
 
-# Install dependencies fresh - explicitly clear npm cache to ensure we get latest packages
-RUN npm cache clean --force && npm install --prefer-online
+# Install dependencies fresh - explicitly clear npm cache to ensure we get latest packages.
+# --legacy-peer-deps: npm 10 crashes resolving vite's newer peer set
+# ("Cannot read properties of null (reading 'edgesOut')").
+RUN npm cache clean --force && npm install --prefer-online --legacy-peer-deps
 
 # Copy source
 COPY . .
